@@ -5,7 +5,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -53,21 +59,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(520,150)" to="(520,310)"/>
-    <wire from="(520,390)" to="(580,390)"/>
-    <wire from="(520,310)" to="(580,310)"/>
-    <wire from="(470,150)" to="(470,320)"/>
-    <wire from="(470,400)" to="(580,400)"/>
-    <wire from="(470,320)" to="(580,320)"/>
-    <wire from="(470,320)" to="(470,400)"/>
-    <wire from="(520,310)" to="(520,390)"/>
-    <comp lib="1" loc="(630,310)" name="AND Gate"/>
-    <comp lib="0" loc="(530,140)" name="Pin">
+    <wire from="(710,270)" to="(710,280)"/>
+    <wire from="(380,230)" to="(710,230)"/>
+    <wire from="(380,280)" to="(710,280)"/>
+    <wire from="(770,250)" to="(840,250)"/>
+    <wire from="(840,250)" to="(840,270)"/>
+    <comp lib="5" loc="(840,270)" name="LED"/>
+    <comp lib="1" loc="(770,250)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(380,230)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(480,140)" name="Pin">
+    <comp lib="0" loc="(380,280)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(630,400)" name="OR Gate"/>
   </circuit>
 </project>
