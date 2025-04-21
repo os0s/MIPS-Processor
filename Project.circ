@@ -1096,8 +1096,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(520,270)" to="(520,400)"/>
     <wire from="(480,950)" to="(600,950)"/>
     <wire from="(960,650)" to="(960,680)"/>
-    <wire from="(200,680)" to="(310,680)"/>
     <wire from="(1560,240)" to="(1810,240)"/>
+    <wire from="(200,680)" to="(310,680)"/>
     <wire from="(1550,350)" to="(1610,350)"/>
     <wire from="(640,650)" to="(640,680)"/>
     <wire from="(370,850)" to="(480,850)"/>
@@ -1220,8 +1220,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1690,110)" to="(1690,120)"/>
     <wire from="(810,830)" to="(810,850)"/>
     <wire from="(950,870)" to="(1120,870)"/>
-    <wire from="(310,650)" to="(310,680)"/>
     <wire from="(190,940)" to="(230,940)"/>
+    <wire from="(310,650)" to="(310,680)"/>
     <wire from="(630,650)" to="(630,690)"/>
     <wire from="(950,650)" to="(950,690)"/>
     <wire from="(1680,360)" to="(1810,360)"/>
@@ -1453,7 +1453,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(510,740)" to="(510,780)"/>
     <wire from="(740,650)" to="(740,690)"/>
     <wire from="(190,740)" to="(190,780)"/>
-    <wire from="(1900,970)" to="(1910,970)"/>
     <wire from="(690,450)" to="(780,450)"/>
     <wire from="(1550,370)" to="(1620,370)"/>
     <wire from="(1680,110)" to="(1690,110)"/>
@@ -2230,6 +2229,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="0"/>
       <a name="bit31" val="1"/>
     </comp>
+    <comp lib="0" loc="(1920,960)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="out_width" val="32"/>
+    </comp>
     <comp lib="0" loc="(160,910)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="B3"/>
@@ -2777,10 +2780,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(850,800)" name="Tunnel">
       <a name="label" val="R26"/>
-    </comp>
-    <comp lib="0" loc="(1920,960)" name="Bit Extender">
-      <a name="in_width" val="1"/>
-      <a name="out_width" val="32"/>
     </comp>
     <comp lib="0" loc="(270,820)" name="Tunnel">
       <a name="facing" val="east"/>
